@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import qapitol.demo.app.entity.Blogger;
-import qapitol.demo.app.repository.Bloggerrepository;
+import qapitol.demo.app.repository.BloggerRepository;
 
 @RestController
 @RequestMapping("/blogger")
-public class Democontroller {
+public class DemoController {
 
 	@Autowired
-	Bloggerrepository bloggerRepository;
+	BloggerRepository bloggerRepository;
 
 	@GetMapping("/")
 	public ResponseEntity<List<Blogger>> allblogger() {

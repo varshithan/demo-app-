@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import qapitol.demo.app.entity.Blogger;
 
 @Repository
-public interface Bloggerrepository extends JpaRepository<Blogger, Integer> {
+public interface BloggerRepository extends JpaRepository<Blogger, Integer> {
 
 }
